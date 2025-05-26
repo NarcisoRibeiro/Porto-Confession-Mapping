@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_90d12ae58e9ce4d5fc51744b2908f07f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_90d12ae58e9ce4d5fc51744b2908f07f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_90d12ae58e9ce4d5fc51744b2908f07f = L.map(
+                "map_90d12ae58e9ce4d5fc51744b2908f07f",
+                {
+                    center: [41.1579, -8.6291],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0a188ac0f5d3c0058dcd7163e972d6f9 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0a188ac0f5d3c0058dcd7163e972d6f9.addTo(map_90d12ae58e9ce4d5fc51744b2908f07f);
+        
+    
+            var marker_cluster_8c0c50bf2d89ed3655c2af030b0c4a12 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_7339b2419ee9162c26ff5da56dac3587 = L.marker(
+                [41.18220062668647, -8.616230917575605],
+                {
+}
+            ).addTo(marker_cluster_8c0c50bf2d89ed3655c2af030b0c4a12);
+        
+    
+            var icon_bb76c3235679c7c111855e54d5a6e613 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6f4c48c476ae888aa15e0d7e4da562a2 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_18ed4f32c2f52b2affaf7ba6751bd988 = $(`<div id="html_18ed4f32c2f52b2affaf7ba6751bd988" style="width: 100.0%; height: 100.0%;">     <b>Paróquia do Amial</b><br>     <i>Rua nova do Tronco 524, 4250-339</i><br><br>     <b>Days:</b> Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday<br>     <b>Time:</b> 9:30 - 12h and 16h to 18:30<br>     <b>Notes:</b> Call whenever possible, but since there are several Friars, Confessions here are almost guaranteed.     </div>`)[0];
+                popup_6f4c48c476ae888aa15e0d7e4da562a2.setContent(html_18ed4f32c2f52b2affaf7ba6751bd988);
+            
+        
+
+        marker_7339b2419ee9162c26ff5da56dac3587.bindPopup(popup_6f4c48c476ae888aa15e0d7e4da562a2)
+        ;
+
+        
+    
+    
+                marker_7339b2419ee9162c26ff5da56dac3587.setIcon(icon_bb76c3235679c7c111855e54d5a6e613);
+            
+    
+            var marker_9180d5be79b5dce8876212c0801f20aa = L.marker(
+                [41.146198654270165, -8.61073771125604],
+                {
+}
+            ).addTo(marker_cluster_8c0c50bf2d89ed3655c2af030b0c4a12);
+        
+    
+            var icon_70dcf0da0f35febc672539c51aa146c4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7b04c6ce875318619ec147cb9bea7349 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_23e401b631ff7bee195657dc7e764353 = $(`<div id="html_23e401b631ff7bee195657dc7e764353" style="width: 100.0%; height: 100.0%;">     <b>Igreja de Santo António dos Congregados</b><br>     <i>Rua de Sá da Bandeira 11, 4000-433</i><br><br>     <b>Days:</b> Tuesday - Friday; Saturday.<br>     <b>Time:</b> 08:40 - 11:00 ; 15:30 - 17h<br>     <b>Notes:</b> This is the official schedule, but if there is only one priest available and Mass is about to begin, he may need to leave the confessional to celebrate it.     </div>`)[0];
+                popup_7b04c6ce875318619ec147cb9bea7349.setContent(html_23e401b631ff7bee195657dc7e764353);
+            
+        
+
+        marker_9180d5be79b5dce8876212c0801f20aa.bindPopup(popup_7b04c6ce875318619ec147cb9bea7349)
+        ;
+
+        
+    
+    
+                marker_9180d5be79b5dce8876212c0801f20aa.setIcon(icon_70dcf0da0f35febc672539c51aa146c4);
+            
+    
+            var marker_7b20dbd271ae5f2d5996aea28514f945 = L.marker(
+                [41.15083665781479, -8.61058427770263],
+                {
+}
+            ).addTo(marker_cluster_8c0c50bf2d89ed3655c2af030b0c4a12);
+        
+    
+            var icon_66fc7754fe4371a0425d72587861f6e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4def569ce6ee5a550f3ddd703cba8253 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_061b7e3c4f96e93ecb75a3fa30c94396 = $(`<div id="html_061b7e3c4f96e93ecb75a3fa30c94396" style="width: 100.0%; height: 100.0%;">     <b>Igreja da Santíssima Trindade</b><br>     <i>Praça Trindade 170, 4000-539</i><br><br>     <b>Days:</b> Monday, Tuesday and Wednesday; Friday; Saturday<br>     <b>Time:</b> 10:30 - 12:15; 15h: 16h; 10h - 12h<br>     <b>Notes:</b> Priests usually use the first confessional on the right. If you need assistance, you may speak to the sacristan.     </div>`)[0];
+                popup_4def569ce6ee5a550f3ddd703cba8253.setContent(html_061b7e3c4f96e93ecb75a3fa30c94396);
+            
+        
+
+        marker_7b20dbd271ae5f2d5996aea28514f945.bindPopup(popup_4def569ce6ee5a550f3ddd703cba8253)
+        ;
+
+        
+    
+    
+                marker_7b20dbd271ae5f2d5996aea28514f945.setIcon(icon_66fc7754fe4371a0425d72587861f6e3);
+            
+    
+            var marker_a8c6f548353a0d0478df6e60006dddca = L.marker(
+                [41.15241815859974, -8.61721718303375],
+                {
+}
+            ).addTo(marker_cluster_8c0c50bf2d89ed3655c2af030b0c4a12);
+        
+    
+            var icon_7029c05e17701e4d22da82d7ac08cf5a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_50ba4889c550d5460d58bb9ee251d787 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_e5bda4e67e26df3f430b4141c8d1e6ff = $(`<div id="html_e5bda4e67e26df3f430b4141c8d1e6ff" style="width: 100.0%; height: 100.0%;">     <b>Capela dos Anjos</b><br>     <i>Rua dos Bragas 321, 4050-123</i><br><br>     <b>Days:</b> Monday - Saturday<br>     <b>Time:</b> 9h - 12h ; 16h - 18:45<br>     <b>Notes:</b> Ring the bell (inside the chapel, on the right wall) twice and wait for the confessor. The confessional is on the right side of the altar.     </div>`)[0];
+                popup_50ba4889c550d5460d58bb9ee251d787.setContent(html_e5bda4e67e26df3f430b4141c8d1e6ff);
+            
+        
+
+        marker_a8c6f548353a0d0478df6e60006dddca.bindPopup(popup_50ba4889c550d5460d58bb9ee251d787)
+        ;
+
+        
+    
+    
+                marker_a8c6f548353a0d0478df6e60006dddca.setIcon(icon_7029c05e17701e4d22da82d7ac08cf5a);
+            
+    
+            var marker_beec1d3789489597e9263e986bd15c1a = L.marker(
+                [41.155816467908934, -8.67933023246518],
+                {
+}
+            ).addTo(marker_cluster_8c0c50bf2d89ed3655c2af030b0c4a12);
+        
+    
+            var icon_b2bd1fbf24bad60d93226400dfbd0aa5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_63cc753f7f73511434e7d584bcb7a868 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_b0ea294eaf54e8cea7fa977fa91880cc = $(`<div id="html_b0ea294eaf54e8cea7fa977fa91880cc" style="width: 100.0%; height: 100.0%;">     <b>Igreja Stella Maris</b><br>     <i>R. de Gondarém 274, 4150-376</i><br><br>     <b>Days:</b> Tuesday - Saturday<br>     <b>Time:</b> 10h - 11:30 ; 16h - 18:30<br>     <b>Notes:</b> There is a bell by the first door on the right. Ring it and ask for a confessor.     </div>`)[0];
+                popup_63cc753f7f73511434e7d584bcb7a868.setContent(html_b0ea294eaf54e8cea7fa977fa91880cc);
+            
+        
+
+        marker_beec1d3789489597e9263e986bd15c1a.bindPopup(popup_63cc753f7f73511434e7d584bcb7a868)
+        ;
+
+        
+    
+    
+                marker_beec1d3789489597e9263e986bd15c1a.setIcon(icon_b2bd1fbf24bad60d93226400dfbd0aa5);
+            
+    
+            var marker_4416bb0d1e3616513cc7c0edb00ea5d0 = L.marker(
+                [41.16115725394742, -8.604971928059497],
+                {
+}
+            ).addTo(marker_cluster_8c0c50bf2d89ed3655c2af030b0c4a12);
+        
+    
+            var icon_23ef449759ae5b1a4831b74e404eaaab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_719c0cc77b796d2227bca414eb310259 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_7b2e95e553284abba0a53ca016a0d62c = $(`<div id="html_7b2e95e553284abba0a53ca016a0d62c" style="width: 100.0%; height: 100.0%;">     <b>Paróquia Nossa Senhora da Conceição</b><br>     <i>Praça do Marquês de Pombal 111, 4000-307</i><br><br>     <b>Days:</b> Friday ; Saturday<br>     <b>Time:</b> 10:30 - 11-30 ; 9:00 - 9:50<br>     <b>Notes:</b> On fridays, ask someone for Fr. Rubens. On saturdays, the confessor is usually in the left-side confessional     </div>`)[0];
+                popup_719c0cc77b796d2227bca414eb310259.setContent(html_7b2e95e553284abba0a53ca016a0d62c);
+            
+        
+
+        marker_4416bb0d1e3616513cc7c0edb00ea5d0.bindPopup(popup_719c0cc77b796d2227bca414eb310259)
+        ;
+
+        
+    
+    
+                marker_4416bb0d1e3616513cc7c0edb00ea5d0.setIcon(icon_23ef449759ae5b1a4831b74e404eaaab);
+            
+    
+            var marker_ef34cec6a086d1a98ad47305b655e33a = L.marker(
+                [41.168742548184625, -8.647933695540893],
+                {
+}
+            ).addTo(marker_cluster_8c0c50bf2d89ed3655c2af030b0c4a12);
+        
+    
+            var icon_54dad5a4b13598246285ee4e1c17790e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d6c7cd2b2b9304d1b74a9016d7aafc18 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_cc5032dcb92ada309ae86d98272114cb = $(`<div id="html_cc5032dcb92ada309ae86d98272114cb" style="width: 100.0%; height: 100.0%;">     <b>Paróquia de Ramalde</b><br>     <i>R. da Igreja de Ramalde 55, 4100-280</i><br><br>     <b>Days:</b> Monday and Tuesday ; Thursday ; Friday ; Saturday ; Sunday<br>     <b>Time:</b> 18h - 19:30 ; 17:30 - 19:30 ; 17h - 19h ; 10:30 - 11:30 ; 17:30 - 18:30<br>     <b>Notes:</b> Call whenever possible to confirm, and try to arrive early. Sometimes the queue gets long, especially if Mass is scheduled right after confessions.     </div>`)[0];
+                popup_d6c7cd2b2b9304d1b74a9016d7aafc18.setContent(html_cc5032dcb92ada309ae86d98272114cb);
+            
+        
+
+        marker_ef34cec6a086d1a98ad47305b655e33a.bindPopup(popup_d6c7cd2b2b9304d1b74a9016d7aafc18)
+        ;
+
+        
+    
+    
+                marker_ef34cec6a086d1a98ad47305b655e33a.setIcon(icon_54dad5a4b13598246285ee4e1c17790e);
+            
+    
+            var marker_396a1d9777390c142dc5a6ce1c4ca62a = L.marker(
+                [41.175864490763956, -8.587763027867803],
+                {
+}
+            ).addTo(marker_cluster_8c0c50bf2d89ed3655c2af030b0c4a12);
+        
+    
+            var icon_470f855fd58f8885f11ea1aef2576f6a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dea1fbafbec2a99edcb679cc33c8b00d = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_6a31392cc655a6bbc5ecc037829ee1b6 = $(`<div id="html_6a31392cc655a6bbc5ecc037829ee1b6" style="width: 100.0%; height: 100.0%;">     <b>Paróquia da Areosa</b><br>     <i>Rua da Igreja da Areosa 91, 4200-323</i><br><br>     <b>Days:</b> Monday - Friday ; Saturday<br>     <b>Time:</b> 17h - 19h ; 17h - 18h<br>     <b>Notes:</b> Call whenever possible to confirm.     </div>`)[0];
+                popup_dea1fbafbec2a99edcb679cc33c8b00d.setContent(html_6a31392cc655a6bbc5ecc037829ee1b6);
+            
+        
+
+        marker_396a1d9777390c142dc5a6ce1c4ca62a.bindPopup(popup_dea1fbafbec2a99edcb679cc33c8b00d)
+        ;
+
+        
+    
+    
+                marker_396a1d9777390c142dc5a6ce1c4ca62a.setIcon(icon_470f855fd58f8885f11ea1aef2576f6a);
+            
+    
+            var marker_5914cfe362c1af9690cff19851209197 = L.marker(
+                [41.161959561516014, -8.646379642909128],
+                {
+}
+            ).addTo(marker_cluster_8c0c50bf2d89ed3655c2af030b0c4a12);
+        
+    
+            var icon_53bd2e21fbb925bed81cc183c92e9de4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f5e1851a1f3ccd6b6d5e1ceb6e344097 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d316b9dbc1d3b2770d59e995da3f3c6a = $(`<div id="html_d316b9dbc1d3b2770d59e995da3f3c6a" style="width: 100.0%; height: 100.0%;">     <b>Paróquia da Boavista</b><br>     <i>R. de Azevedo Coutinho 103, 4100-020</i><br><br>     <b>Days:</b> Monday - Saturday<br>     <b>Time:</b> 10h - 11:30 ; 15h - 18h<br>     <b>Notes:</b> *IMPORTANT*: While there is no official confession schedule, Fr. Feliciano and Fr. Agostinho are usually present and hear confessions whenever possible.     </div>`)[0];
+                popup_f5e1851a1f3ccd6b6d5e1ceb6e344097.setContent(html_d316b9dbc1d3b2770d59e995da3f3c6a);
+            
+        
+
+        marker_5914cfe362c1af9690cff19851209197.bindPopup(popup_f5e1851a1f3ccd6b6d5e1ceb6e344097)
+        ;
+
+        
+    
+    
+                marker_5914cfe362c1af9690cff19851209197.setIcon(icon_53bd2e21fbb925bed81cc183c92e9de4);
+            
+    
+            var marker_b7b2d275598ab0dca163994fffc40edd = L.marker(
+                [41.17389245724593, -8.605426353081697],
+                {
+}
+            ).addTo(marker_cluster_8c0c50bf2d89ed3655c2af030b0c4a12);
+        
+    
+            var icon_e108dd4c59e75aa021b5a7d61af3e358 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cad2558b6e07f3b9ed239d8af29f4f70 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_d7f6d2ce4b65bcebcc0196906893d748 = $(`<div id="html_d7f6d2ce4b65bcebcc0196906893d748" style="width: 100.0%; height: 100.0%;">     <b>Paróquia de Paranhos</b><br>     <i>Largo Igreja de Paranhos 53, 4200-325</i><br><br>     <b>Days:</b> Tuesday<br>     <b>Time:</b> 18h - 18:45<br>     <b>Notes:</b> Call whenever possible to confirm.     </div>`)[0];
+                popup_cad2558b6e07f3b9ed239d8af29f4f70.setContent(html_d7f6d2ce4b65bcebcc0196906893d748);
+            
+        
+
+        marker_b7b2d275598ab0dca163994fffc40edd.bindPopup(popup_cad2558b6e07f3b9ed239d8af29f4f70)
+        ;
+
+        
+    
+    
+                marker_b7b2d275598ab0dca163994fffc40edd.setIcon(icon_e108dd4c59e75aa021b5a7d61af3e358);
+            
+    
+            var marker_82b3640ecf1e94b34372971f5326166c = L.marker(
+                [41.17558189988758, -8.6330993563616],
+                {
+}
+            ).addTo(marker_cluster_8c0c50bf2d89ed3655c2af030b0c4a12);
+        
+    
+            var icon_456e089d8578c13fc3bf11392eacca92 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0f3e5fb52e33b1cac60ef05e7abf84ca = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_44fbd427293b15edac2e0002b5a8f47b = $(`<div id="html_44fbd427293b15edac2e0002b5a8f47b" style="width: 100.0%; height: 100.0%;">     <b>Paróquia Senhora do Porto</b><br>     <i>Rua Senhora do Porto 74, 4250-450</i><br><br>     <b>Days:</b> Tuesday - Friday<br>     <b>Time:</b> 9h - 11:30 ; 16:30 - 19h<br>     <b>Notes:</b> Call whenever possible to confirm.     </div>`)[0];
+                popup_0f3e5fb52e33b1cac60ef05e7abf84ca.setContent(html_44fbd427293b15edac2e0002b5a8f47b);
+            
+        
+
+        marker_82b3640ecf1e94b34372971f5326166c.bindPopup(popup_0f3e5fb52e33b1cac60ef05e7abf84ca)
+        ;
+
+        
+    
+    
+                marker_82b3640ecf1e94b34372971f5326166c.setIcon(icon_456e089d8578c13fc3bf11392eacca92);
+            
+    
+            var marker_cc82d61a2a2f3a858fde9ec48670507a = L.marker(
+                [41.205982644585305, -8.54174730733781],
+                {
+}
+            ).addTo(marker_cluster_8c0c50bf2d89ed3655c2af030b0c4a12);
+        
+    
+            var icon_986edfe4907d5b4d08edf224574340d5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7674e11154ee1c915401a1db5f83b535 = L.popup({
+  "maxWidth": 300,
+});
+
+        
+            
+                var html_2ef40eb1944766d53389c9564057c367 = $(`<div id="html_2ef40eb1944766d53389c9564057c367" style="width: 100.0%; height: 100.0%;">     <b>Santuário de Santa Rita</b><br>     <i>Quinta da Formiga, 4445-485</i><br><br>     <b>Days:</b> Monday and Thursday ; Tuesday - Saturday<br>     <b>Time:</b> 18:30** ; 8:30**<br>     <b>Notes:</b> The times listed refer to the weekly Mass schedule. Confessions are held approximately 30 minutes after each Mass.     </div>`)[0];
+                popup_7674e11154ee1c915401a1db5f83b535.setContent(html_2ef40eb1944766d53389c9564057c367);
+            
+        
+
+        marker_cc82d61a2a2f3a858fde9ec48670507a.bindPopup(popup_7674e11154ee1c915401a1db5f83b535)
+        ;
+
+        
+    
+    
+                marker_cc82d61a2a2f3a858fde9ec48670507a.setIcon(icon_986edfe4907d5b4d08edf224574340d5);
+            
+    
+            marker_cluster_8c0c50bf2d89ed3655c2af030b0c4a12.addTo(map_90d12ae58e9ce4d5fc51744b2908f07f);
+        
+    
+            tile_layer_0a188ac0f5d3c0058dcd7163e972d6f9.addTo(map_90d12ae58e9ce4d5fc51744b2908f07f);
+        
+    
+                marker_7339b2419ee9162c26ff5da56dac3587.setIcon(icon_bb76c3235679c7c111855e54d5a6e613);
+            
+    
+                marker_9180d5be79b5dce8876212c0801f20aa.setIcon(icon_70dcf0da0f35febc672539c51aa146c4);
+            
+    
+                marker_7b20dbd271ae5f2d5996aea28514f945.setIcon(icon_66fc7754fe4371a0425d72587861f6e3);
+            
+    
+                marker_a8c6f548353a0d0478df6e60006dddca.setIcon(icon_7029c05e17701e4d22da82d7ac08cf5a);
+            
+    
+                marker_beec1d3789489597e9263e986bd15c1a.setIcon(icon_b2bd1fbf24bad60d93226400dfbd0aa5);
+            
+    
+                marker_4416bb0d1e3616513cc7c0edb00ea5d0.setIcon(icon_23ef449759ae5b1a4831b74e404eaaab);
+            
+    
+                marker_ef34cec6a086d1a98ad47305b655e33a.setIcon(icon_54dad5a4b13598246285ee4e1c17790e);
+            
+    
+                marker_396a1d9777390c142dc5a6ce1c4ca62a.setIcon(icon_470f855fd58f8885f11ea1aef2576f6a);
+            
+    
+                marker_5914cfe362c1af9690cff19851209197.setIcon(icon_53bd2e21fbb925bed81cc183c92e9de4);
+            
+    
+                marker_b7b2d275598ab0dca163994fffc40edd.setIcon(icon_e108dd4c59e75aa021b5a7d61af3e358);
+            
+    
+                marker_82b3640ecf1e94b34372971f5326166c.setIcon(icon_456e089d8578c13fc3bf11392eacca92);
+            
+    
+                marker_cc82d61a2a2f3a858fde9ec48670507a.setIcon(icon_986edfe4907d5b4d08edf224574340d5);
+            
+    
+            marker_cluster_8c0c50bf2d89ed3655c2af030b0c4a12.addTo(map_90d12ae58e9ce4d5fc51744b2908f07f);
+        
+</script>
+</html>
